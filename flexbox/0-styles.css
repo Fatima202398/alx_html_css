@@ -189,12 +189,17 @@ ul.row {
     display: flex;
   }
   
-  /* Remove the row::after declaration */
+  ul.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
   
   [class*='col-'] {
     padding: 0.5rem;
+
     
-    /* Remove the float: left property */
+    /* No float property required for flexbox */
   }
   
   .col-1-3 {
