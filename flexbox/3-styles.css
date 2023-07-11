@@ -508,6 +508,10 @@
     flex-wrap: wrap;
   }
   
+  .section-services ul {
+    flex-wrap: wrap;
+  }
+
   /*** 4. CARD ***/
   
   /* Card (all styles)
