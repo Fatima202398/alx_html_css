@@ -177,29 +177,21 @@
     margin-right: auto;
   }
   
- /* Grid
-============================= */
+  /* Grid
+   ============================= */
 
 ul.row {
     margin: 0;
     padding: 0;
     list-style: none;
-    
-    /* Add the following properties */
-    display: flex;
+    display: flex; /* Add display property with a value of flex */
   }
   
-  ul.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+  /* Remove the row::after declaration */
   
   [class*='col-'] {
     padding: 0.5rem;
-
-    
-    /* No float property required for flexbox */
+    /* Remove the float: left */
   }
   
   .col-1-3 {
