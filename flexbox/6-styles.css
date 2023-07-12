@@ -39,6 +39,7 @@
   
     --line-height-small: 1.2;
     --line-height-base: 1.5
+    --nav-item-margin: 0 0 0 2rem
 
     /** SECTION **/
     --section-padding: 5rem 0;
@@ -339,9 +340,11 @@
         font-weight: var(--nav-item-font-weight);
         font-size: var(--nav-item-font-size);
         letter-spacing: var(--nav-item-letter-spacing);
-        /* Remove display: var(--nav-item-display) */
-        margin: var(--nav-item-margin);
+
+          /* Remove display: var(--nav-item-display) */
+
       }
+    
       
       .nav .nav-link {
         display: inline-block;
@@ -363,7 +366,11 @@
         width: 0;
         height: 0.2rem;
         transition: var(--transition-duration) var(--transition-cubic-bezier);
-        
+
+        .nav .nav-item + .nav-item {
+            margin: var(--nav-item-margin);
+          }
+
   /* Header
       ============================= */
   
