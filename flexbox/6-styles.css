@@ -381,7 +381,8 @@
 
           .nav .nav-item + .nav-item {
             margin: 0; /* Your margin value here */
-          }
+            margin: 0; /* Move the margin declaration here */
+}
 
   /* Header
       ============================= */
