@@ -292,6 +292,7 @@
     white-space: nowrap;
   }
   
+  
   /*** 2. LAYOUT ***/
   
   /* Layout
@@ -334,6 +335,8 @@
         text-align: center;
         display: flex;
         justify-content: space-between; /* Add this line */
+        .nav .nav-item + .nav-item 
+          /* Your styles here */
       }
       
       .nav .nav-item {
@@ -368,11 +371,16 @@
         width: 0;
         height: 0.2rem;
         transition: var(--transition-duration) var(--transition-cubic-bezier);
+      }
 
         .nav .nav-item + .nav-item {
             margin: var(--nav-item-margin);
             /* Move margin declaration from .nav .nav-item */
             margin: 0 0 0 2rem;
+          }
+
+          .nav .nav-item + .nav-item {
+            margin: 0; /* Your margin value here */
           }
 
   /* Header
