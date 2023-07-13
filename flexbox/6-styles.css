@@ -38,8 +38,9 @@
     --font-weight-bold: 700;
   
     --line-height-small: 1.2;
-    --line-height-base: 1.5
-    --nav-item-margin: 0 0 0 2rem
+    --line-height-base: 1.5;
+    --nav-item-margin: 0 0 0 2rem;
+   }
 
     /** SECTION **/
     --section-padding: 5rem 0;
@@ -201,7 +202,7 @@
     --nav-item-font-size: var(--font-size-medium);
     --nav-item-letter-spacing: .04rem;
     --nav-item-display: inline-block;
-    --nav-item-margin: 0 0 0 2rem;
+    --nav-item-margin: 0 2rem 0 0;
     --nav-item-link-hover: var(--color-white);
     
     /** BUTTON **/
@@ -342,6 +343,7 @@
         letter-spacing: var(--nav-item-letter-spacing);
 
           /* Remove display: var(--nav-item-display) */
+          /* Remove display declaration */
 
       }
     
@@ -369,6 +371,8 @@
 
         .nav .nav-item + .nav-item {
             margin: var(--nav-item-margin);
+            /* Move margin declaration from .nav .nav-item */
+            margin: 0 0 0 2rem;
           }
 
   /* Header
